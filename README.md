@@ -4,34 +4,19 @@ This project implements a UVM-based verification environment for an SPI memory c
 
 The goal is to verify correct SPI functionality under various scenarios such as reset, read, write, and bulk transfers, while collecting functional coverage using QuestaSim, executed via Cygwin on Windows.
 
-+ Project Structure
-  Verify_spi/
-├── spi_mem.v          # SPI memory RTL (DUT)
-├── tb/                # Testbench top and interface
-│   ├── spi_if.sv
-│   └── top.sv
-├── uvc/               # UVM Verification Components
-│   ├── env/           # Agent, driver, monitor, scoreboard, coverage
-│   ├── seq/           # Sequences and transaction
-│   └── tests/         # UVM test cases
-└── sim/               # Simulation, logs, and coverage
-    ├── Makefile
-    ├── logs/          # Per-test simulation logs
-    ├── cov/           # UCDB and HTML coverage reports
-    └── work_spi/      # QuestaSim working library
 
 
 + Implemented Tests
 
-reset_dut_test – Verifies DUT reset behavior
+reset_dut_test –> Verifies DUT reset behavior
 
-write_test – SPI write transaction verification
+write_test –> SPI write transaction verification
 
-read_test – SPI read transaction verification
+read_test –> SPI read transaction verification
 
-wr_bulk_rd_bulk_test – Continuous write/read (stress test)
+wr_bulk_rd_bulk_test –> Continuous write/read (stress test)
 
-spi_test – Integrated SPI functionality test
+spi_test –> Integrated SPI functionality test
 
 
 + Functional Coverage
@@ -45,3 +30,14 @@ HTML coverage reports are automatically generated and available at:
 <img width="537" height="347" alt="image" src="https://github.com/user-attachments/assets/274fb296-6476-405d-ac02-1d65b5ddf0b0" />
 
 
++ Key Features
+
+Fully UVM-compliant verification environment
+
+Transaction-based SPI verification
+
+Multiple directed and bulk transfer test scenarios
+
+Per-test logging and coverage collection
+
+Clean and modular structure, easy to extend with new tests or sequences
