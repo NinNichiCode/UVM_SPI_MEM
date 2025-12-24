@@ -1,0 +1,7 @@
+var g_data = {
+g1183:[{dummy:0},
+{name:'cov_inst',f:1,type:1,id:1188,tb:'24',h:'24',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],parent:'1183'},
+{name:'\\/spi_pkg::spi_coverage::cov_inst ',f:1,type:2,id:1195,tb:'24',h:'24',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['per_instance','true']],cvg:'cov_inst',parent:'1188'}],
+dummyEnd:0
+};
+processCovergroupsData(g_data);

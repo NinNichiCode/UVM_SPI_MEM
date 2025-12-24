@@ -1,0 +1,17 @@
+../spi_mem.v
+../tb/spi_if.sv
+../tb/top.sv
+../uvc/env/spi_agent.sv
+../uvc/env/spi_config.sv
+../uvc/env/spi_coverage.sv
+../uvc/env/spi_driver.sv
+../uvc/env/spi_monitor.sv
+../uvc/env/spi_pkg.sv
+../uvc/env/spi_scoreboard.sv
+../uvc/seq/read_seq.sv
+../uvc/seq/reset_dut_seq.sv
+../uvc/seq/spi_seq.sv
+../uvc/seq/transaction.sv
+../uvc/seq/wr_bulk_rd_bulk_seq.sv
+../uvc/seq/write_seq.sv
+../uvc/tests/base_test.sv

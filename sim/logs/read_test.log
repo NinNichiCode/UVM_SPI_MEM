@@ -1,0 +1,485 @@
+# vsim -c -coverage top "+UVM_TESTNAME=read_test" -voptargs="+acc" -l logs/read_test.log -do "coverage save -onexit cov/read_test.ucdb; run -all; quit -f" 
+# Start time: 12:02:34 on Dec 24,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.spi_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.spi_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.spi_if(fast)
+# Loading work.spi_mem(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading D:/questasim_b_install/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit cov/read_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test read_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               read_test               -     @471 
+#   env                      spi_env                 -     @478 
+#     agent                  spi_agent               -     @489 
+#       drv                  spi_driver              -     @527 
+#         rsp_port           uvm_analysis_port       -     @542 
+#         seq_item_port      uvm_seq_item_pull_port  -     @534 
+#       mon                  spi_monitor             -     @520 
+#         item_send_port     uvm_analysis_port       -     @668 
+#       seqr                 uvm_sequencer           -     @550 
+#         rsp_export         uvm_analysis_export     -     @557 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @651 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     cov                    spi_coverage            -     @503 
+#       analysis_imp         uvm_analysis_imp        -     @510 
+#     scb                    spi_scoreboard          -     @496 
+#       item_recv_imp        uvm_analysis_imp        -     @682 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 11 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 390: uvm_test_top.env.agent.mon [MON] DATA READ addr:11 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:11, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 198 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 790: uvm_test_top.env.agent.mon [MON] DATA READ addr:198 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 790: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 198
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 1190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 3 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 1190: uvm_test_top.env.agent.mon [MON] DATA READ addr:3 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 1190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:3, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 1590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 13 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 1590: uvm_test_top.env.agent.mon [MON] DATA READ addr:13 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 1590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:13, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 1990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 4 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 1990: uvm_test_top.env.agent.mon [MON] DATA READ addr:4 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 1990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:4, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 2390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 23 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 2390: uvm_test_top.env.agent.mon [MON] DATA READ addr:23 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 2390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:23, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 2790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 8 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 2790: uvm_test_top.env.agent.mon [MON] DATA READ addr:8 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 2790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:8, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 3190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 20 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 3190: uvm_test_top.env.agent.mon [MON] DATA READ addr:20 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 3190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:20, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 3590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 30 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 3590: uvm_test_top.env.agent.mon [MON] DATA READ addr:30 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 3590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:30, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 3990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 25 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 3990: uvm_test_top.env.agent.mon [MON] DATA READ addr:25 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 3990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:25, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 4390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 23 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 4390: uvm_test_top.env.agent.mon [MON] DATA READ addr:23 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 4390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:23, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 4790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 5 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 4790: uvm_test_top.env.agent.mon [MON] DATA READ addr:5 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 4790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:5, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 5190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 240 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 5190: uvm_test_top.env.agent.mon [MON] DATA READ addr:240 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 5190: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 240
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 5590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 20 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 5590: uvm_test_top.env.agent.mon [MON] DATA READ addr:20 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 5590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:20, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 5990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 115 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 5990: uvm_test_top.env.agent.mon [MON] DATA READ addr:115 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 5990: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 115
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 6390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 196 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 6390: uvm_test_top.env.agent.mon [MON] DATA READ addr:196 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 6390: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 196
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 6790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 4 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 6790: uvm_test_top.env.agent.mon [MON] DATA READ addr:4 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 6790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:4, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 7190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 6 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 7190: uvm_test_top.env.agent.mon [MON] DATA READ addr:6 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 7190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:6, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 7590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 23 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 7590: uvm_test_top.env.agent.mon [MON] DATA READ addr:23 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 7590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:23, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 7990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 18 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 7990: uvm_test_top.env.agent.mon [MON] DATA READ addr:18 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 7990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:18, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 8390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 9 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 8390: uvm_test_top.env.agent.mon [MON] DATA READ addr:9 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 8390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:9, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 8790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 46 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 8790: uvm_test_top.env.agent.mon [MON] DATA READ addr:46 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 8790: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 46
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 9190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 20 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 9190: uvm_test_top.env.agent.mon [MON] DATA READ addr:20 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 9190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:20, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 9590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 28 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 9590: uvm_test_top.env.agent.mon [MON] DATA READ addr:28 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 9590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:28, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 9990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 49 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 9990: uvm_test_top.env.agent.mon [MON] DATA READ addr:49 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 9990: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 49
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 10390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 27 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 10390: uvm_test_top.env.agent.mon [MON] DATA READ addr:27 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 10390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:27, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 10790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 26 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 10790: uvm_test_top.env.agent.mon [MON] DATA READ addr:26 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 10790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:26, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 11190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 27 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 11190: uvm_test_top.env.agent.mon [MON] DATA READ addr:27 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 11190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:27, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 11590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 23 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 11590: uvm_test_top.env.agent.mon [MON] DATA READ addr:23 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 11590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:23, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 11990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 19 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 11990: uvm_test_top.env.agent.mon [MON] DATA READ addr:19 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 11990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:19, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 12390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 11 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 12390: uvm_test_top.env.agent.mon [MON] DATA READ addr:11 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 12390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:11, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 12790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 12 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 12790: uvm_test_top.env.agent.mon [MON] DATA READ addr:12 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 12790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:12, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 13190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 5 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 13190: uvm_test_top.env.agent.mon [MON] DATA READ addr:5 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 13190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:5, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 13590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 10 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 13590: uvm_test_top.env.agent.mon [MON] DATA READ addr:10 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 13590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:10, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 13990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 22 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 13990: uvm_test_top.env.agent.mon [MON] DATA READ addr:22 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 13990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:22, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 14390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 22 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 14390: uvm_test_top.env.agent.mon [MON] DATA READ addr:22 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 14390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:22, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 14790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 1 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 14790: uvm_test_top.env.agent.mon [MON] DATA READ addr:1 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 14790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:1, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 15190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 3 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 15190: uvm_test_top.env.agent.mon [MON] DATA READ addr:3 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 15190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:3, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 15590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 4 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 15590: uvm_test_top.env.agent.mon [MON] DATA READ addr:4 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 15590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:4, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 15990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 61 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 15990: uvm_test_top.env.agent.mon [MON] DATA READ addr:61 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 15990: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 61
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 16390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 31 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 16390: uvm_test_top.env.agent.mon [MON] DATA READ addr:31 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 16390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:31, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 16790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 72 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 16790: uvm_test_top.env.agent.mon [MON] DATA READ addr:72 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 16790: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 72
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 17190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 19 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 17190: uvm_test_top.env.agent.mon [MON] DATA READ addr:19 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 17190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:19, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 17590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 18 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 17590: uvm_test_top.env.agent.mon [MON] DATA READ addr:18 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 17590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:18, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 17990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 31 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 17990: uvm_test_top.env.agent.mon [MON] DATA READ addr:31 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 17990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:31, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 18390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 29 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 18390: uvm_test_top.env.agent.mon [MON] DATA READ addr:29 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 18390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:29, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 18790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 10 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 18790: uvm_test_top.env.agent.mon [MON] DATA READ addr:10 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 18790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:10, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 19190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 7 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 19190: uvm_test_top.env.agent.mon [MON] DATA READ addr:7 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 19190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:7, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 19590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 0 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 19590: uvm_test_top.env.agent.mon [MON] DATA READ addr:0 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 19590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:0, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 19990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 14 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 19990: uvm_test_top.env.agent.mon [MON] DATA READ addr:14 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 19990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:14, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 20390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 27 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 20390: uvm_test_top.env.agent.mon [MON] DATA READ addr:27 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 20390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:27, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 20790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 8 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 20790: uvm_test_top.env.agent.mon [MON] DATA READ addr:8 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 20790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:8, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 21190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 14 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 21190: uvm_test_top.env.agent.mon [MON] DATA READ addr:14 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 21190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:14, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 21590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 4 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 21590: uvm_test_top.env.agent.mon [MON] DATA READ addr:4 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 21590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:4, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 21990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 9 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 21990: uvm_test_top.env.agent.mon [MON] DATA READ addr:9 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 21990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:9, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 22390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 200 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 22390: uvm_test_top.env.agent.mon [MON] DATA READ addr:200 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 22390: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 200
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 22790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 166 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 22790: uvm_test_top.env.agent.mon [MON] DATA READ addr:166 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 22790: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 166
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 23190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 8 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 23190: uvm_test_top.env.agent.mon [MON] DATA READ addr:8 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 23190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:8, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 23590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 15 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 23590: uvm_test_top.env.agent.mon [MON] DATA READ addr:15 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 23590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:15, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 23990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 4 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 23990: uvm_test_top.env.agent.mon [MON] DATA READ addr:4 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 23990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:4, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 24390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 12 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 24390: uvm_test_top.env.agent.mon [MON] DATA READ addr:12 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 24390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:12, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 24790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 15 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 24790: uvm_test_top.env.agent.mon [MON] DATA READ addr:15 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 24790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:15, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 25190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 5 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 25190: uvm_test_top.env.agent.mon [MON] DATA READ addr:5 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 25190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:5, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 25590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 30 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 25590: uvm_test_top.env.agent.mon [MON] DATA READ addr:30 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 25590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:30, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 25990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 23 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 25990: uvm_test_top.env.agent.mon [MON] DATA READ addr:23 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 25990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:23, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 26390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 23 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 26390: uvm_test_top.env.agent.mon [MON] DATA READ addr:23 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 26390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:23, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 26790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 44 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 26790: uvm_test_top.env.agent.mon [MON] DATA READ addr:44 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 26790: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 44
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 27190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 30 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 27190: uvm_test_top.env.agent.mon [MON] DATA READ addr:30 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 27190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:30, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 27590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 24 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 27590: uvm_test_top.env.agent.mon [MON] DATA READ addr:24 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 27590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:24, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 27990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 23 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 27990: uvm_test_top.env.agent.mon [MON] DATA READ addr:23 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 27990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:23, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 28390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 17 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 28390: uvm_test_top.env.agent.mon [MON] DATA READ addr:17 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 28390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:17, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 28790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 25 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 28790: uvm_test_top.env.agent.mon [MON] DATA READ addr:25 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 28790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:25, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 29190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 12 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 29190: uvm_test_top.env.agent.mon [MON] DATA READ addr:12 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 29190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:12, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 29590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 140 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 29590: uvm_test_top.env.agent.mon [MON] DATA READ addr:140 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 29590: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 140
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 29990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 211 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 29990: uvm_test_top.env.agent.mon [MON] DATA READ addr:211 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 29990: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 211
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 30390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 16 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 30390: uvm_test_top.env.agent.mon [MON] DATA READ addr:16 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 30390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:16, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 30790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 15 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 30790: uvm_test_top.env.agent.mon [MON] DATA READ addr:15 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 30790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:15, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 31190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 9 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 31190: uvm_test_top.env.agent.mon [MON] DATA READ addr:9 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 31190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:9, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 31590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 21 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 31590: uvm_test_top.env.agent.mon [MON] DATA READ addr:21 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 31590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:21, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 31990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 2 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 31990: uvm_test_top.env.agent.mon [MON] DATA READ addr:2 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 31990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:2, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 32390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 23 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 32390: uvm_test_top.env.agent.mon [MON] DATA READ addr:23 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 32390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:23, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 32790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 25 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 32790: uvm_test_top.env.agent.mon [MON] DATA READ addr:25 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 32790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:25, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 33190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 24 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 33190: uvm_test_top.env.agent.mon [MON] DATA READ addr:24 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 33190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:24, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 33590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 26 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 33590: uvm_test_top.env.agent.mon [MON] DATA READ addr:26 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 33590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:26, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 33990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 24 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 33990: uvm_test_top.env.agent.mon [MON] DATA READ addr:24 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 33990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:24, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 34390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 3 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 34390: uvm_test_top.env.agent.mon [MON] DATA READ addr:3 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 34390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:3, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 34790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 21 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 34790: uvm_test_top.env.agent.mon [MON] DATA READ addr:21 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 34790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:21, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 35190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 23 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 35190: uvm_test_top.env.agent.mon [MON] DATA READ addr:23 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 35190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:23, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 35590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 93 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 35590: uvm_test_top.env.agent.mon [MON] DATA READ addr:93 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 35590: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 93
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 35990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 2 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 35990: uvm_test_top.env.agent.mon [MON] DATA READ addr:2 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 35990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:2, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 36390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 80 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 36390: uvm_test_top.env.agent.mon [MON] DATA READ addr:80 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 36390: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 80
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 36790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 21 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 36790: uvm_test_top.env.agent.mon [MON] DATA READ addr:21 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 36790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:21, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 37190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 37 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 37190: uvm_test_top.env.agent.mon [MON] DATA READ addr:37 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 37190: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 37
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 37590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 250 dout : x
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 37590: uvm_test_top.env.agent.mon [MON] DATA READ addr:250 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(25) @ 37590: uvm_test_top.env.scb [SCB] Ignore out-of-bound address: 250
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 37990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 23 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 37990: uvm_test_top.env.agent.mon [MON] DATA READ addr:23 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 37990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:23, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 38390: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 5 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 38390: uvm_test_top.env.agent.mon [MON] DATA READ addr:5 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 38390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:5, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 38790: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 19 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 38790: uvm_test_top.env.agent.mon [MON] DATA READ addr:19 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 38790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:19, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 39190: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 26 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 39190: uvm_test_top.env.agent.mon [MON] DATA READ addr:26 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 39190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:26, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 39590: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 20 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 39590: uvm_test_top.env.agent.mon [MON] DATA READ addr:20 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 39590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:20, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(85) @ 39990: uvm_test_top.env.agent.drv [DRV] DATA READ addr : 20 dout : 0
+# UVM_INFO ../uvc/env/spi_monitor.sv(77) @ 39990: uvm_test_top.env.agent.mon [MON] DATA READ addr:20 data:0 
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(42) @ 39990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:20, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 39990: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvc/tests/base_test.sv(40) @ 39990: uvm_test_top [BASE_TEST] *** TEST PASSED ***
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  306
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [BASE_TEST]     1
+# [DRV]   100
+# [MON]   100
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCB]    17
+# [SCO]    83
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : D:/questasim_b_install/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 39990 ns  Iteration: 62  Instance: /top
+# Saving coverage database on exit...
+# End time: 12:02:38 on Dec 24,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

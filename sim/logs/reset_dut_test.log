@@ -1,0 +1,136 @@
+# vsim -c -coverage top "+UVM_TESTNAME=reset_dut_test" -voptargs="+acc" -l logs/reset_dut_test.log -do "coverage save -onexit cov/reset_dut_test.ucdb; run -all; quit -f" 
+# Start time: 12:02:41 on Dec 24,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.spi_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.spi_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.spi_if(fast)
+# Loading work.spi_mem(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading D:/questasim_b_install/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit cov/reset_dut_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test reset_dut_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               reset_dut_test          -     @471 
+#   env                      spi_env                 -     @478 
+#     agent                  spi_agent               -     @489 
+#       drv                  spi_driver              -     @527 
+#         rsp_port           uvm_analysis_port       -     @542 
+#         seq_item_port      uvm_seq_item_pull_port  -     @534 
+#       mon                  spi_monitor             -     @520 
+#         item_send_port     uvm_analysis_port       -     @668 
+#       seqr                 uvm_sequencer           -     @550 
+#         rsp_export         uvm_analysis_export     -     @557 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @651 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     cov                    spi_coverage            -     @503 
+#       analysis_imp         uvm_analysis_imp        -     @510 
+#     scb                    spi_scoreboard          -     @496 
+#       item_recv_imp        uvm_analysis_imp        -     @682 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ../uvc/env/spi_driver.sv(30) @ 0: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/spi_monitor.sv(31) @ 10: uvm_test_top.env.agent.mon [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(30) @ 10: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_monitor.sv(31) @ 30: uvm_test_top.env.agent.mon [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(30) @ 30: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(30) @ 30: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/spi_monitor.sv(31) @ 50: uvm_test_top.env.agent.mon [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(30) @ 50: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_monitor.sv(31) @ 70: uvm_test_top.env.agent.mon [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(30) @ 70: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(30) @ 70: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/spi_monitor.sv(31) @ 90: uvm_test_top.env.agent.mon [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(30) @ 90: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_monitor.sv(31) @ 110: uvm_test_top.env.agent.mon [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(30) @ 110: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(30) @ 110: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/spi_monitor.sv(31) @ 130: uvm_test_top.env.agent.mon [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(30) @ 130: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_monitor.sv(31) @ 150: uvm_test_top.env.agent.mon [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(30) @ 150: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_driver.sv(30) @ 150: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/spi_monitor.sv(31) @ 170: uvm_test_top.env.agent.mon [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(30) @ 170: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/spi_monitor.sv(31) @ 190: uvm_test_top.env.agent.mon [MON] SYSTEM RESET DETECTED
+# UVM_INFO ../uvc/env/spi_scoreboard.sv(30) @ 190: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 190: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvc/tests/base_test.sv(40) @ 190: uvm_test_top [BASE_TEST] *** TEST PASSED ***
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   31
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [BASE_TEST]     1
+# [DRV]     5
+# [MON]    10
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCO]    10
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : D:/questasim_b_install/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 190 ns  Iteration: 61  Instance: /top
+# Saving coverage database on exit...
+# End time: 12:02:46 on Dec 24,2025, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
