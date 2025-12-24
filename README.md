@@ -24,12 +24,8 @@ spi_test –> Integrated SPI functionality test
 
 Functional coverage is collected using UCDB
 
-HTML coverage reports are automatically generated and available at:
+HTML coverage reports are automatically generated and available at:  sim/cov/html/index.html
 
-<img width="302" height="150" alt="image" src="https://github.com/user-attachments/assets/2dca58e1-8f2c-4ec9-8fef-6e2ec7d69bd1" />
-
-
-<img width="537" height="347" alt="image" src="https://github.com/user-attachments/assets/274fb296-6476-405d-ac02-1d65b5ddf0b0" />
 
 
 
@@ -44,3 +40,10 @@ Multiple directed and bulk transfer test scenarios
 Per-test logging and coverage collection
 
 Clean and modular structure, easy to extend with new tests or sequences
+
+
+<img width="302" height="150" alt="image" src="https://github.com/user-attachments/assets/2dca58e1-8f2c-4ec9-8fef-6e2ec7d69bd1" />
+
+
+<img width="537" height="347" alt="image" src="https://github.com/user-attachments/assets/274fb296-6476-405d-ac02-1d65b5ddf0b0" />
+
